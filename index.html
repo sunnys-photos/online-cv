@@ -1,342 +1,39 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sunatorium.org</title>
-    <meta name="description" content="sunatorium.org" />
-    <meta name="keywords" content="jekyll, image gallery, image grid, template, masonry" />
-    <meta name="author" content="Adjetey Sowah" />
-
-    <link rel="stylesheet" type="text/css" href="http://192.168.43.113:4000/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="http://192.168.43.113:4000/css/component.css" />
-    <script src="http://192.168.43.113:4000/js/modernizr.custom.js"></script>
-  </head>
-  <body>
-
-  <div class="container">
+---
+layout: default
+---
+<div class="container">
 	<header class="clearfix">
-		<h1>sunatorium.org</h1>
+		<h1>{{ site.name }}</h1>
 	</header>
 	<div id="grid-gallery" class="grid-gallery">
 
 	<section class="grid-wrap">
 	<ul class="grid">
 		<li class="grid-sizer"></li><!-- for Masonry column width -->
-		
+		{% for post in site.posts %}
 		<li>
 			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/02.jpg" alt="img"/>
+				<img src="{{ site.url }}/img/thumb/{{ post.photo }}" alt="img"/>
 				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
+					<h3>{{ post.caption_header}}</h3>
+					<p>{{ post.caption }}</p>
 				</figcaption>
 			</figure>
 		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/12.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/13.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/03.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/10.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/16.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/06.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/17.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/07.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/01.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/09.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/14.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/04.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/05.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/15.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/11.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/18.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/thumb/08.jpg" alt="img"/>
-				<figcaption>
-					<h3>Sample header</h3>
-					<p>sample caption</p>
-				</figcaption>
-			</figure>
-		</li>
-		
+		{% endfor %}
 	</ul>
 	</section><!-- // grid-wrap -->
 
 	<section class="slideshow">
 	<ul>
-		
+		{% for post in site.posts %}
 		<li>
 			<figure>
-				<img src="http://192.168.43.113:4000/img/large/02.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
+				<img src="{{ site.url }}/img/large/{{ post.photo }}" alt="img"/>
+				<figcaption><h3>{{ post.caption_header}}</h3><p>{{ post.caption }}</p></figcaption>
 			</figure>
 		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/12.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/13.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/03.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/10.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/16.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/06.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/17.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/07.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/01.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/09.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/14.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/04.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/05.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/15.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/11.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/18.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
-		<li>
-			<figure>
-				<img src="http://192.168.43.113:4000/img/large/08.jpg" alt="img"/>
-				<figcaption><h3>Sample header</h3><p>sample caption</p></figcaption>
-			</figure>
-		</li>
-		
+		{% endfor %}
 	</ul>
 	<nav>
 		<span class="icon nav-prev"></span>
@@ -348,13 +45,3 @@
 
 	</div><!-- // grid-gallery -->
 </div>
-
-    <script src="http://192.168.43.113:4000/js/imagesloaded.pkgd.min.js"></script>
-    <script src="http://192.168.43.113:4000/js/masonry.pkgd.min.js"></script>
-    <script src="http://192.168.43.113:4000/js/classie.js"></script>
-    <script src="http://192.168.43.113:4000/js/cbpGridGallery.js"></script>
-    <script>
-      new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
-    </script>
-  </body>
-</html>

@@ -1,0 +1,8 @@
+name: sunatorium.org
+markdown: redcarpet
+pygments: true
+permalink: /:year/:month/:title/
+url: sunatorium.org
+author:
+    name: Suni
+    twitter: #
